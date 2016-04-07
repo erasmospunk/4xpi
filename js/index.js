@@ -15,9 +15,8 @@ function refreshClock() {
       degM = (startM + diff) / 3600 * 360,
       degH = (startH + diff) / 43200 * 360;
   
-  $('.hour').css(rotate(degH));
-  $('.minute').css(rotate(degM));
-
+$('.hour').css(rotate(degH));
+$('.minute').css(rotate(degM));
 $('.second').css(rotate(degS));
   
   setTimeout(refreshClock, updateInterval);
